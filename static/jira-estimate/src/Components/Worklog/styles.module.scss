@@ -1,0 +1,18 @@
+.HomePage{
+    padding-top: 1.2rem;
+    .mainHeading{
+        font-size: 23px;
+        .anotherHeading{
+            color: #878787;
+            font-size: 16px; 
+        }
+        span {
+            display: block;
+          }
+          
+    }
+    .mainContainer{
+        margin-top: 18px;
+        width: 97%;
+    }
+}

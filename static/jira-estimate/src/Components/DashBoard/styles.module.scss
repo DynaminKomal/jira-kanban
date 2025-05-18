@@ -1,0 +1,41 @@
+.HomePage {
+    padding-top: 1.2rem;
+
+    .mainHeading {
+        font-size: 23px;
+
+        .anotherHeading {
+            color: #878787;
+            font-size: 16px;
+        }
+
+        span {
+            display: block;
+        }
+
+    }
+
+    .mainContainer {
+        margin-top: 18px;
+        width: 97%;
+    }
+}
+
+.showCounts {
+    background: #f4f5f7;
+    height: 35px;
+    width: 100px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .stuckCount {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.RedExclamation {
+    margin: 0 8px;
+}

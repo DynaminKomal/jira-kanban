@@ -1,0 +1,259 @@
+.HomePage {
+    padding-top: 1.2rem;
+
+    .mainHeading {
+        font-size: 23px;
+
+        .anotherHeading {
+            color: #878787;
+            font-size: 16px;
+        }
+
+        span {
+            display: block;
+        }
+
+    }
+
+    .mainContainer {
+        margin-top: 18px;
+        width: 97%;
+    }
+}
+
+
+
+.worklogContainer {
+    margin-top: 26px;
+
+    .mainContainer {
+        width: 1605px;
+        min-height: 765px;
+        position: relative;
+
+        .tablebox {
+            display: flex;
+            justify-content: normal;
+            align-items: center;
+            height: 75px;
+        }
+    }
+}
+
+.userBox {
+    padding-top: 25px;
+    height: 45px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+
+    .userDetails {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 18px;
+        width: 70px;
+
+        .userName {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 50px;
+            img{
+                cursor: pointer;
+            }
+
+            .userImg {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%
+            }
+        }
+    }
+
+
+}
+
+.cardBox {
+    height: 54px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 2px #00000029;
+    border-radius: 8px;
+    margin-top: 25px;
+    margin-left: 6px;
+    margin-bottom: 7px;
+    width: 247px;
+    // position: absolute;
+
+    .time {
+        width: auto;
+        height: 21px;
+        text-align: left;
+        font-size: 16px;
+        color: #000000;
+        padding-top: 13px;
+        margin: 0px 14px;
+    }
+}
+
+.cardBoxBlank {
+    height: 54px;
+    margin-top: 25px;
+    margin-left: 6px;
+    margin-bottom: 7px;
+    opacity: 1;
+    width: 247px;
+}
+
+.taskName {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+
+
+.taskDetails {
+    position: absolute;
+    top: 6px;
+}
+
+
+.userBoxActive {
+    width: 135px;
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 24px;
+        height: 24px;
+        cursor: default;
+        border-radius: 50%;
+    }
+
+    .priorityImg {
+        width: 20px;
+    }
+
+    .blankDiv {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+
+
+.cardContainer {
+    user-select: none;
+    margin-bottom: 8px;
+    min-height: 35px;
+    max-height: auto;
+    box-shadow: 0px 2px 2px #00000029;
+    border-radius: 35px;
+    opacity: 1;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+    background-color: #8cc9c9;
+    color: white;
+}
+
+.userLists {
+    width: 94px;
+}
+
+.issueLists {
+    width: 75%;
+    display: flex;
+    padding-top: 13px;
+}
+
+
+.completed {
+    background-color: green;
+    color: white;
+}
+
+.inProgressWithinTime {
+    background-color: blue;
+    color: white;
+}
+
+.overdue {
+    background-color: red;
+    color: white;
+}
+
+.notStartedFuture {
+    background-color: #8cc9c9;
+    color: black;
+}
+
+.even {
+    background-color: rgba($color: #f4f4f4, $alpha: 0.5);
+}
+
+.odd {
+    background-color: rgba($color: white, $alpha: 0.5);
+}
+
+.errorMessage {
+    color: red;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.timeSlot {
+    display: flex;
+    gap: 10px;
+}
+
+
+.timeBox {
+    width: 106px;
+    border-right: 1px solid #f5f5f5;
+    text-align: center;
+
+    &:nth-child(5) {
+        border-right: 2px solid #bababa;
+    }
+
+    &:nth-child(9) {
+        border-right: 2px solid #bababa;
+    }
+
+    &:nth-child(13) {
+        border-right: 2px solid #bababa;
+    }
+}
+
+.header {
+    display: flex;
+    min-height: 765px;
+
+    .user {
+        width: 106px;
+        border-right: 2px solid #bababa;
+    }
+}
+
+.formattedDataBox {
+    position: absolute;
+    top: 25px;
+    width: 100%;
+    z-index: 0;
+}
+
+.blankCard {
+    user-select: none;
+    margin: 0 0px 8px 8px;
+    min-height: 35px;
+    max-height: auto;
+    border-radius: 35px;
+    opacity: 1;
+    position: relative;
+    padding-left: 24px;
+    color: white;
+    width: 65px;
+}

@@ -1,0 +1,357 @@
+.worklogContainer {
+    margin-top: 26px;
+
+    .ColumnNames {
+        display: flex;
+        justify-content: space-between;
+        width: 1605px;
+
+        .nameColumn {
+            width: 94px;
+            background: #F4F5F7 0% 0% no-repeat padding-box;
+            opacity: 1;
+            height: 45px;
+
+            .name {
+                font-size: 16px;
+                letter-spacing: 0px;
+                color: #42526E;
+                font-weight: 600;
+                margin-top: 6px;
+                margin-left: 17px;
+            }
+        }
+
+        .weekdays {
+            width: 1375px;
+            display: flex;
+            justify-content: space-between;
+
+            .Columns {
+                width: 260px;
+                height: 45px;
+                background: #F4F5F7 0% 0% no-repeat padding-box;
+                opacity: 1;
+
+                .columnName {
+                    margin-top: 6px;
+                    margin-left: 21px;
+                    font-size: 16px;
+                    letter-spacing: 0px;
+                    color: #42526E;
+                    font-weight: 600;
+                }
+            }
+
+        }
+
+        .totalColumn {
+            width: 110px;
+            background: #F4F5F7 0% 0% no-repeat padding-box;
+            opacity: 1;
+            height: 45px;
+
+            .name {
+                font-size: 16px;
+                letter-spacing: 0px;
+                color: #42526E;
+                font-weight: 600;
+                margin-top: 6px;
+                margin-left: 17px;
+            }
+        }
+    }
+
+    .mainContainer {
+        width: 1605px;
+        min-height: 770px;
+
+        .tablebox {
+            display: flex;
+            justify-content: space-between;
+            // background-color: #F4F5F7;
+        }
+    }
+}
+
+.userBox {
+    padding-top: 25px;
+    height: 45px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+
+    .userDetails {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 18px;
+        width: 70px;
+
+        .userName {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 50px;
+
+            .arrow {
+                height: 15px;
+                opacity: 1;
+                display: inline-block;
+                line-height: 1;
+            }
+
+            .arrowDown {
+                width: 15px;
+                opacity: 1;
+                display: inline-block;
+                line-height: 1;
+                margin-right: 5px;
+            }
+
+            .userImg {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%
+            }
+        }
+    }
+
+
+}
+
+.cardBox {
+    height: 54px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 2px #00000029;
+    border-radius: 8px;
+    margin-top: 25px;
+    margin-left: 6px;
+    margin-bottom: 7px;
+    width: 247px;
+    // position: absolute;
+
+    .time {
+        width: auto;
+        height: 21px;
+        text-align: left;
+        font-size: 16px;
+        color: #000000;
+        padding-top: 13px;
+        margin: 0px 14px;
+    }
+}
+
+.cardBoxBlank {
+    height: 54px;
+    margin-top: 25px;
+    margin-left: 6px;
+    margin-bottom: 7px;
+    opacity: 1;
+    width: 247px;
+}
+
+.taskName {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.epicBox {
+    color: #000000;
+    font-size: 13px;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    font-weight: 500;
+
+    .epicName {
+        color: #403294;
+        background-color: #EAE6FF;
+        display: inline-block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        vertical-align: top;
+        white-space: nowrap;
+        box-sizing: border-box;
+        max-width: 100%;
+        padding: 0px 4px;
+        border-radius: 3px;
+    }
+}
+
+
+.taskDetails {
+    display: flex;
+    justify-content: space-between;
+    color: #6D6D6D;
+    margin-top: 5px;
+    position: absolute;
+    bottom: 8px;
+    width: 225px;
+
+    .imgWithProjectKey {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        .key {
+            margin-left: 5px;
+            font-size: 12px;
+            width: fit-content;
+            font-weight: 600;
+        }
+
+    }
+}
+
+
+.userBoxActive {
+    width: 135px;
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 24px;
+        height: 24px;
+        cursor: default;
+        border-radius: 50%;
+    }
+
+    .priorityImg {
+        width: 20px;
+    }
+
+    .blankDiv {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.inputBox {
+    width: 50px;
+    height: 22px;
+    border: 2px solid blue;
+    font-size: 12px;
+    outline: none;
+
+}
+
+.partitionBox {
+    width: fit-content;
+    background-color: lightgray;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    height: 18px;
+    margin-top: 4px;
+    cursor: pointer;
+
+    .originalEstimate {
+        width: 45px;
+        height: auto;
+        border-radius: 8px 0px 0px 8px;
+        font-size: 12px;
+    }
+
+    .actualEstimate {
+        width: 45px;
+        height: auto;
+        border-left: 2px solid #E5E5E5;
+        border-radius: 0px 8px 8px 0px;
+        font-size: 12px;
+        cursor: default;
+
+    }
+
+    .InProgress {
+        width: 45px;
+        height: auto;
+        border-radius: 0px 8px 8px 0px;
+        background-color: blue;
+        color: #FFFFFF;
+        font-size: 12px;
+        cursor: default;
+
+    }
+
+    .devDone {
+        width: 45px;
+        height: auto;
+        border-radius: 0px 8px 8px 0px;
+        background-color: #FF4A00;
+        color: #FFFFFF;
+        font-size: 12px;
+        cursor: default;
+    }
+
+    .Done {
+        width: 45px;
+        height: auto;
+        border-radius: 0px 8px 8px 0px;
+        background-color: green;
+        color: #FFFFFF;
+        font-size: 12px;
+        cursor: default;
+
+    }
+
+}
+
+.cardContainer {
+    cursor: pointer;
+    user-select: none;
+    padding: 8px;
+    margin: 0 0px 8px 8px;
+    width: 228px;
+    min-height: 100px;
+    max-height: auto;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 2px #00000029;
+    border-radius: 8px;
+    opacity: 1;
+    position: relative;
+}
+
+.userLists {
+    background-color: #F4F5F7;
+    width: 94px;
+}
+
+.issueLists {
+    width: 1375px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.totalList {
+    background-color: #F4F5F7;
+    width: 110px
+}
+
+.cardBox2 {
+    background: #fff 0 0 no-repeat padding-box;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px #00000029;
+    height: 54px;
+    margin-left: 4px;
+    margin-top: 23px;
+    opacity: 1;
+    width: 102px;
+
+    .time {
+        width: auto;
+        height: 21px;
+        text-align: left;
+        font-size: 16px;
+        color: #000000;
+        padding-top: 10px;
+        margin: 0px 14px;
+    }
+}
+
+.issues {
+    background-color: #F4F5F7;
+    width: 260px;
+}

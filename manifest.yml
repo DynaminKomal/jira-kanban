@@ -1,0 +1,52 @@
+modules:
+  jira:projectPage:
+    - key: jira-estimate-hello-world-project-page
+      resource: main
+      title: Jira Estimate
+      icon: https://jira-timesheets-cloud.herokuapp.com/addon-icon-outline.svg
+      resolver:
+        function: resolver
+      layout: basic
+      sections:
+        - pages:
+            - title: Task Estimates
+              route: /task-estimate
+              icon: https://developer.atlassian.com/platform/forge/images/icons/issue-panel-icon.svg
+            - title: Worklog
+              route: /worklog
+              icon: https://jira-timesheets-cloud.herokuapp.com/addon-icon-outline.svg
+            - title: Daily Worklog
+              route: /daily-worklog
+              icon: https://jira-timesheets-cloud.herokuapp.com/addon-icon-outline.svg
+  function:
+    - key: resolver
+      handler: index.handler
+
+resources:
+  - key: main
+    path: static/jira-estimate/build
+    tunnel:
+      port: 3000
+app:
+  runtime:
+    name: nodejs18.x
+  id: ari:cloud:ecosystem::app/feb32b8b-9485-4d07-8a3d-de709ec16bd1
+permissions:
+  scopes:
+    - read:jira-work
+    - write:jira-work
+    - read:jira-user
+    - storage:app
+  content:
+    styles:
+      - "unsafe-inline"
+  external:
+    fetch:
+      backend:
+        - "https://komalprj.atlassian.net"
+    images:
+      - "https://i1.wp.com"
+      - "*.atlassian.net"
+      - "*.gravatar.com"
+      - "*.wp.com"
+      - "*.atl-paas.net"
